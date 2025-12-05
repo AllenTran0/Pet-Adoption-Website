@@ -1,0 +1,43 @@
+.navbar-top  {
+  background-color: hsl(0, 0%, 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-bottom {
+    background-color: hsl(45, 100%, 50%);
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: right;
+}
+
+container * {
+    display: inline;
+}
+
+.navbar-top a,
+.navbar-bottom a {
+  margin: 20px;
+  color: black !important;
+  text-decoration: none;
+}

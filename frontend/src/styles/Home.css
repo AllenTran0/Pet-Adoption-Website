@@ -1,0 +1,74 @@
+.app{
+  display: flex;
+}
+
+.cat_logo{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -18.3px;
+}
+
+.text-container {
+  height: 40px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  vertical-align: top;
+}
+
+.select_text {
+  font-family: "Optima, sans-serif";
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.animal_selection{
+  display: flex;
+  flex-direction: row;
+  font-family: "Optima, sans-serif";
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 27.8%;
+}
+
+.animal_select{
+  display: flex;
+  flex-direction: row;
+  font-family: "Optima, sans-serif";
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 22%;
+}
+
+.btn{
+  position: relative;
+  border: 1px solid;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(45, 100%, 50%);
+  cursor: pointer;
+}
+
+.btn img{
+  width: 100px;
+  height: 100px;
+}
+
+.btn:hover{
+  background-color: hsl(45, 100%, 40%);
+}
+
+.btn:active{
+  background-color: hsl(45, 100%, 50%);
+}

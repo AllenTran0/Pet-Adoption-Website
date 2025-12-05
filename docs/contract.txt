@@ -1,0 +1,70 @@
+# User API Contract
+
+GET /application 
+
+Input Parameters: 
+-	Name (string): users first and last name  
+-	Phone number (integer): users phone number 
+-	Email address (string): users email address 
+-	Address (string): users address
+-	City (string): users city
+-	Postal code (integer): users postal code 10-digit integer 
+
+Output Parameters:
+-	Sign Up message (string): a message for the user if the sign up was able to go through
+
+GET /questionnaire
+
+Input Parameters:
+-	Specific dog breed (string/ Boolean): See if a specific dog breed is preferred 
+-	Service dog (string/ Boolean): see if they are looking for a service dog 
+-	Hyper allergenic dog (string/ Boolean): see if they need a hyper allergenic dog
+-	House trained (string/ Boolean): see if a house-trained dog is preferred 
+Output Parameters:
+-	Successfully retrieves quiz information 
+
+
+POST /questionnaire/results
+
+Input Parameters:
+-	Specific dog breed (string/ Boolean): See if a specific dog breed is preferred 
+-	Service dog (string/ Boolean): see if they are looking for a service dog 
+-	Hyper allergenic dog (string/ Boolean): see if they need a hyper allergenic dog
+-	House trained (string/ Boolean): see if a house-trained dog is preferred 
+
+Output Parameter:
+-	Successfully submit quiz answers
+
+
+POST /login 
+
+Input Parameters: 
+-	Username (string):  users username 
+-	Password (string): users password 
+
+Output Parameters:
+-	Returns successful user authentication
+
+GET /settings
+
+Input parameters:
+-	Dark mode (string/ Boolean): returns preference on if they want dark mode or not 
+-	Text size (integer): has a default but changes size of text on the website 
+-	Image size (integer): changes the size of the images on the website 
+-	High contrast (string/ Boolean): 
+
+Output Parameters:
+-	Returns successful user preferences
+-	Or returns a error message if user preferences encountered error with changing preferences. 
+
+POST /settings_got 
+
+Input parameters:
+-	Dark mode (string/ Boolean): returns preference on if they want dark mode or not 
+-	Text size (integer): has a default but changes size of text on the website 
+-	Image size (integer): changes the size of the images on the website 
+-	High contrast (string/ Boolean): 
+
+Output Parameters:
+-	Adds user preferences 
+

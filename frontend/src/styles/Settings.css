@@ -1,0 +1,76 @@
+.settings-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .icon-bar {
+    width: 5px;
+    height: 40px;
+    background-color: var(--icon-bar-bg);
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .settings-label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 15px;
+    color: var(--text-color);
+  }
+  
+  .btn-group .btn {
+    width: 80px;
+    border-radius: 10px;
+    border: 2px solid var(--btn-border-color);
+    padding: 5px;
+    font-size: 0.9em;
+  }
+  
+  .btn-active {
+    background-color: var(--btn-active-bg);
+    color: var(--btn-active-text);
+    border-color: var(--btn-active-border);
+  }
+  
+  .btn-inactive {
+    background-color: var(--btn-inactive-bg);
+    color: var(--btn-inactive-text);
+    border-color: var(--btn-inactive-border);
+  }
+  :root {
+    --icon-bar-bg: #1f1f1f;
+    --text-color: #000;
+    --btn-border-color: #000;
+    --btn-active-bg: #333;
+    --btn-active-text: #fff;
+    --btn-active-border: #333;
+    --btn-inactive-bg: #fff;
+    --btn-inactive-text: #000;
+    --btn-inactive-border: #000;
+  }
+  
+  .dark-mode {
+    --icon-bar-bg: #aaa;
+    --text-color: #ddd;
+    --btn-border-color: #444;
+    --btn-active-bg: #444;
+    --btn-active-text: #ddd;
+    --btn-active-border: #444;
+    --btn-inactive-bg: #333;
+    --btn-inactive-text: #ddd;
+    --btn-inactive-border: #333;
+  }
+  
+  .high-contrast {
+    --icon-bar-bg: #fff;
+    --text-color: #fff;
+    --btn-border-color: #fff;
+    --btn-active-bg: #222;
+    --btn-active-text: #fff;
+    --btn-active-border: #fff;
+    --btn-inactive-bg: #000;
+    --btn-inactive-text: #fff;
+    --btn-inactive-border: #fff;
+  }
+  
